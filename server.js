@@ -8,19 +8,11 @@ connectDB();
 
 const app = express();
 
-// CORS configuration - allow all localhost origins
+// CORS configuration - allow all origins
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-
-    // Allow localhost origins
-    if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
-      return callback(null, true);
-    }
-
-    // Reject other origins
-    callback(new Error('Not allowed by CORS'));
+    // Allow all origins to bypass CORS blocks from frontend hosts like Netlify/Vercel
+    callback(null, true);
   },
   credentials: true
 }));

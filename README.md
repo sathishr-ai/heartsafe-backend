@@ -1,11 +1,14 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Heart" width="60" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Heart" width="70" />
 
-# HeartSafe 
+# 🤍 HeartSafe 🤍
 ### AI-Powered Coronary Heart Disease Predictive Ecosystem
 
+<br/>
+
 <p align="center">
+  <img src="https://img.shields.io/github/repo-size/sathishr-ai/heartsafe-backend?style=for-the-badge&color=2ea44f" alt="Repo Size" />
   <img src="https://img.shields.io/badge/Status-Live_Production-2ea44f?style=for-the-badge&logo=vercel" alt="Status" />
   <img src="https://img.shields.io/badge/Version-v1.0.0-blue?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge" alt="License" />
@@ -27,28 +30,29 @@
   <img src="https://img.shields.io/badge/Download_Android_APK-green?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
 </a>
 
-<br/>
+<br/><br/>
 
 </div>
 
 ---
 
-## 📸 Production Application Interfaces
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📸%20Live%20Application%20Interfaces&fontColor=ffffff&fontSize=22" width="100%"/>
+
 > *Actual application UI rendering live data bridging the Flutter ecosystem and responsive HTML5.*
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Web Platform Interface</b></td>
-      <td align="center"><b>Mobile Android Interface</b></td>
+      <td align="center"><b>🌐 Web Platform Interface</b></td>
+      <td align="center"><b>📱 Mobile Android Interface</b></td>
     </tr>
     <tr>
       <td>
-        <!-- DRAG AND DROP YOUR WEB APP SCREENSHOT INSIDE THE SRC QUOTES BELOW -->
+        <!-- WEB APP SCREENSHOT GOES HERE -->
         <img src="https://via.placeholder.com/600x400/0d1117/58a6ff?text=Drop+Web+App+Screenshot+Here" alt="Web Application Output" width="450"/>
       </td>
       <td>
-        <!-- DRAG AND DROP YOUR MOBILE APP SCREENSHOT INSIDE THE SRC QUOTES BELOW -->
+        <!-- MOBILE APP SCREENSHOT GOES HERE -->
         <img src="https://via.placeholder.com/250x400/0d1117/3fb950?text=Drop+Mobile+App+Screenshot+Here" alt="Mobile Application Output" width="250"/>
       </td>
     </tr>
@@ -57,7 +61,17 @@
 
 ---
 
-## 🏗️ Deep-Level System Architecture
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🎯%20Executive%20Problem%20Statement&fontColor=ffffff&fontSize=22" width="100%"/>
+
+Cardiovascular diseases are the leading cause of death globally. In clinical data evaluation, speed and predictive accuracy are paramount. 
+
+**HeartSafe** was developed to bridge the gap between abstract machine learning algorithms and real-world clinical adoption. By unifying a highly-tuned **XGBoost Classifier** with a **Node.js REST API**, the application delivers real-time diagnostic assessments directly to medical professionals through a **Flutter-engineered** cross-platform interface.
+
+This ecosystem proves strict adherence to modern deployment pipelines, utilizing stateless JWT authentication, scalable NoSQL remote clustering (MongoDB Atlas), and responsive state-management.
+
+---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=🏗️%20Deep-Level%20System%20Architecture&fontColor=ffffff&fontSize=22" width="100%"/>
 
 The ecosystem relies on an asynchronous, highly-available multi-tier architecture to securely relay patient arrays and offload heavy ML computations instantly out-of-thread.
 
@@ -102,7 +116,7 @@ graph TD
 
 ---
 
-## 💻 Technical Stack & Engineering Rationale
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=💻%20Technical%20Stack%20&%20Rationale&fontColor=ffffff&fontSize=22" width="100%"/>
 
 <div align="center">
 
@@ -117,35 +131,42 @@ graph TD
 
 ---
 
-## ⚡ Core Enterprise Features
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=⚡%20Core%20Enterprise%20Features&fontColor=ffffff&fontSize=22" width="100%"/>
 
-### 1. Robust Zero-Trust Authentication
+### 🔒 1. Robust Zero-Trust Authentication
 - Implemented **Stateless JWT (JSON Web Tokens)** architecture.
 - Passwords are cryptographically hashed via **Bcrypt** prior to database insertion.
 - Enforced strict **CORS policies** allowing bypass only on verified production host domains.
 
-### 2. Intelligent Batch Processing
+### 📊 2. Intelligent Batch Processing
 - Administrative dashboard featuring an automated CSV multi-patient ingestion pipeline.
 - Backend iteratively parses, normalizes, and feeds mass datasets into the ML Engine via parallel routing, mapping fully formatted visual charts to the frontend state.
 
-### 3. Dynamic PDF Generation
+### 📑 3. Dynamic PDF Generation
 - Algorithmically constructs and exports comprehensive **PDF Medical Reports** summarizing feature importance, critical lifestyle adjustments, and automated dietary planning based on specific cholesterol/pressure thresholds.
 
 ---
 
-## 🔌 API Endpoint Documentation
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=📂%20File%20Structure&fontColor=ffffff&fontSize=22" width="100%"/>
 
-| HTTP Method | Endpoint Route | Purpose | Protected |
-|---|---|---|:---:|
-| `POST` | `/api/auth/register` | Registers new clinical user and encrypts credentials | ❌ |
-| `POST` | `/api/auth/login` | Authenticates user and provisions 7-day JWT token | ❌ |
-| `POST` | `/api/predictions/single` | Feeds singular patient array to Python ML model | 🔒 |
-| `POST` | `/api/predictions/batch` | Processes multipart/form-data CSV uploads | 🔒 |
-| `GET`  | `/api/followups/list` | Hydrates the practitioner dashboard with scheduled appointments | 🔒 |
+```text
+HeartSafe-Project/
+│
+├── chd_flutter_app/              # Native Android App (Flutter/Dart)
+│   ├── lib/screens/              # Cross-platform interactive views
+│   └── lib/services/             # API routing configurations
+│
+├── backend/                      # Node.js + Express.js API
+│   ├── config/database.js        # MongoDB Atlas routing
+│   ├── controllers/              # JWT & Authorization Logic
+│   └── models/                   # Mongoose DB Schemas
+│
+└── CChd.prediction.html          # Standalone public Web Application
+```
 
 ---
 
-## 👨‍💻 Meet the Engineer
+<img src="https://capsule-render.vercel.app/api?type=rect&color=02569B&height=50&text=👨‍💻%20Meet%20the%20Engineer&fontColor=ffffff&fontSize=22" width="100%"/>
 
 <div align="center">
   <h3>Sathish R</h3>

@@ -28,10 +28,21 @@
 
 <br/>
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="25" />
-  <em>Designed for both individual patient monitoring and bulk clinical dataset analysis.</em>
-</div>
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="25" /> System Architecture
+
+The architecture of HeartSafe is decoupled into three primary layers to ensure high availability, security, and scalability:
+
+```mermaid
+graph TD
+    A[Flutter Mobile App] -->|HTTPS REST API| C(Node.js Express Gateway)
+    B[Vanilla HTML Web App] -->|HTTPS REST API| C
+    
+    C -->|JWT Auth & Validation| D{API Routing}
+    
+    D <-->|CRUD Operations| E[(MongoDB Atlas)]
+    D <-->|Predictive Analytics| F[Python XGBoost Engine]
+```
 
 ---
 
@@ -63,52 +74,32 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Wrench.png" width="25" /> Local Installation Matrix
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Telescope.png" width="25" /> Roadmap & Future Scope
+- [x] Initial ML Model Training (92% Accuracy)
+- [x] Full-Stack UI Integration & API Deployment
+- [ ] **Phase 2:** Live EHR (Electronic Health Record) system syncing.
+- [ ] **Phase 3:** Biometric smartwatch integration for real-time heart rate telemetry.
 
-<details>
-<summary><b>🔥 Click to expand the developer deployment guide</b></summary>
+---
 
-<br/>
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" width="25" /> Meet the Developer
 
-### 1. Database Configuration
-* Spin up a MongoDB Atlas cluster and whitelist your IP `0.0.0.0/0`.
-* Acquire your exact `mongodb+srv://` URI string and inject it into your `.env` layer.
+Built passionately by an **Aspiring AI/ML Engineer and Full-Stack Developer** focused on creating intelligent, human-centric software solutions. I specialize in traversing the entire pipeline—from data preprocessing and predictive modeling to deploying interactive, production-ready architectures that actively transform complex data into impactful utilities.
 
-### 2. Backend Bootup
-```bash
-git clone https://github.com/sathishr-ai/heartsafe-backend.git
-cd heartsafe-backend
-npm install
-```
-
-*Create the Environment Layer (`.env`):*
-```bash
-MONGO_URI=mongodb+srv://user123:<password>@cluster0...
-PORT=5000
-JWT_SECRET=super_secret
-```
-
-*Ignite Server:*
-```bash
-npm start
-```
-
-### 3. Frontend Execution (Flutter)
-```bash
-cd chd_flutter_app
-
-# Render Web Build:
-flutter build web
-
-# Generate Android Release APK:
-flutter build apk --release
-```
-
-</details>
+<div align="center">
+  <a href="https://github.com/sathishr-ai">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="#your-linkedin-link-here">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:your-email@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</div>
 
 <br/>
 
 <div align="center">
-  <h3>Built with passion by an Aspiring AI/ML Engineer and Full-Stack Developer</h3>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </div>

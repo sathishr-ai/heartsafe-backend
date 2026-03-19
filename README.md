@@ -33,31 +33,71 @@
 
 ---
 
-## 🎯 Executive Summary
+## 📸 Production Application Interfaces
+> *Actual application UI rendering live data bridging the Flutter ecosystem and responsive HTML5.*
 
-In clinical data evaluation, speed and predictive accuracy are paramount. **HeartSafe** was developed to bridge the gap between abstract machine learning algorithms and real-world clinical adoption. By unifying a highly-tuned **XGBoost Classifier** with a **Node.js REST API**, the application delivers real-time diagnostic assessments directly to medical professionals through a **Flutter-engineered** cross-platform interface.
-
-This ecosystem proves strict adherence to modern deployment pipelines, utilizing stateless JWT authentication, scalable NoSQL remote clustering (MongoDB Atlas), and responsive state-management.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Web Platform Interface</b></td>
+      <td align="center"><b>Mobile Android Interface</b></td>
+    </tr>
+    <tr>
+      <td>
+        <!-- DRAG AND DROP YOUR WEB APP SCREENSHOT INSIDE THE SRC QUOTES BELOW -->
+        <img src="https://via.placeholder.com/600x400/0d1117/58a6ff?text=Drop+Web+App+Screenshot+Here" alt="Web Application Output" width="450"/>
+      </td>
+      <td>
+        <!-- DRAG AND DROP YOUR MOBILE APP SCREENSHOT INSIDE THE SRC QUOTES BELOW -->
+        <img src="https://via.placeholder.com/250x400/0d1117/3fb950?text=Drop+Mobile+App+Screenshot+Here" alt="Mobile Application Output" width="250"/>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-## 🏗️ High-Availability System Architecture
+## 🏗️ Deep-Level System Architecture
 
-The ecosystem relies on an asynchronous multi-tier architecture to securely relay patient data and offload heavy ML computations without blocking the main runtime thread.
+The ecosystem relies on an asynchronous, highly-available multi-tier architecture to securely relay patient arrays and offload heavy ML computations instantly out-of-thread.
 
 ```mermaid
 graph TD
-    UI[Frontend Client <br/> Flutter Web / Desktop / Android] -->|JSON Payload via HTTPS| API(Express.js Gateway API)
+    classDef frontend fill:#02569B,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef nodejs fill:#339933,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef python fill:#FFD43B,stroke:#fff,stroke-width:2px,color:#000;
+    classDef db fill:#47A248,stroke:#fff,stroke-width:2px,color:#fff;
+
+    subgraph "Client Layer (Frontend)"
+        A[Flutter Android APK]:::frontend
+        B[Vanilla Web Application]:::frontend
+    end
+
+    subgraph "API Gateway Layer (Node.js)"
+        C{NGINX / Vercel Edge}
+        D(Express.js REST Router):::nodejs
+        E[JWT Auth & Middleware Bypass]:::nodejs
+    end
+
+    subgraph "Persistence & ML Computation Layer"
+        F[(MongoDB Atlas Cloud)]:::db
+        G[Python XGBoost Engine]:::python
+    end
+
+    A -->|JSON Payload via HTTPS| C
+    B -->|JSON Payload via HTTPS| C
+    C --> D
     
-    API -->|Authenticate| JWT{JWT Middleware}
-    JWT -- Invalid --> 401[401 Unauthorized]
-    JWT -- Valid --> Router{Core Router}
+    D -->|Token Validate| E
+    E -- Success --> D
     
-    Router <-->|CRUD Operations| DB[(MongoDB Atlas <br/> Patient Health Profiles)]
-    Router <-->|Feature Vector Extraction| MLE[Python XGBoost Model <br/> Predictive Analytics]
+    D <-->|Asynchronous CRUD| F
+    D <-->|Feature Vector Extraction| G
     
-    MLE -->|Probability Score %| Router
-    Router -->|200 OK Response| UI
+    G -->|Probability Score %| D
+    D -->|200 OK Response| C
+    C --> A
+    C --> B
 ```
 
 ---
@@ -115,7 +155,7 @@ graph TD
   <a href="https://github.com/sathishr-ai">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="#">
+  <a href="#your-linkedin">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:your-email@example.com">

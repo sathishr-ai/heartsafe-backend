@@ -1,28 +1,41 @@
 <div align="center">
-
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=netlify" alt="Status">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart" width="50" />
+  <h1 align="center">HeartSafe : AI-Powered CHD Risk Assessor</h1>
   
-  <h1>❤️ HeartSafe: AI-Powered CHD Risk Assessor</h1>
-  
-  <p><strong>A fast, cross-platform healthcare application prioritizing early Coronary Heart Disease detection.</strong></p>
+  <p align="center">
+    <strong>An end-to-end intelligent diagnostic ecosystem prioritizing early Coronary Heart Disease detection.</strong>
+  </p>
 
-  <a href="https://heartsafechdpred.netlify.app/">
-    <img src="https://img.shields.io/badge/Live_Demo-Access_Web_App-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Mobile_App-Download_APK-green?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
-  </a>
-
+  <!-- ACTION BUTTON CLUSTER -->
+  <div align="center">
+    <a href="https://heartsafechdpred.netlify.app/">
+      <img src="https://img.shields.io/badge/Live_Demo-Access_Web_App-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo">
+    </a>
+    <a href="https://heartsafe-backend.onrender.com/api/health">
+      <img src="https://img.shields.io/badge/Live_API-Render_Backend-success?style=for-the-badge&logo=render&logoColor=white" alt="Live API">
+    </a>
+    <a href="#-mobile-application">
+      <img src="https://img.shields.io/badge/Mobile_App-Download_APK-green?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
+    </a>
+  </div>
 </div>
 
-<br />
+<br/>
 
-## 🌟 Project Overview
-**HeartSafe** is an end-to-end intelligent predictive healthcare solution. Built to analyze clinical metrics and patient history through an **XGBoost** machine learning model, it serves real-time Coronary Heart Disease (CHD) risk assessments and automated preventive advisories. The application features a premium cross-platform interface supporting both individual patient profiles and bulk dataset processing for clinical environments.
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="25" /> Project Pinnacle Overview
+
+**HeartSafe** is a full-stack, premium healthcare suite that bridges the gap between predictive AI algorithms and real-world clinical application. Driven by a highly accurate **XGBoost Model** built in Python, the cross-platform ecosystem analyzes clinical metrics (like blood pressure, BMI, glucose, and patient history) to deliver instant risk forecasting for 10-year Coronary Heart Disease (CHD) development.
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="25" />
+  <em>Designed for both individual patient monitoring and bulk clinical dataset analysis.</em>
+</div>
 
 ---
 
-## 🛠️ Technical Arsenal
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Crossed%20Swords.png" width="25" /> The Technical Arsenal
 
 <div align="center">
   <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
@@ -33,64 +46,69 @@
   <img src="https://img.shields.io/badge/XGBoost-%23F37626.svg?style=for-the-badge&logoColor=white" alt="XGBoost">
 </div>
 
-* **Frontend Layer:** Flutter (Android & Web), Vanilla HTML/JS
-* **Backend Architecture:** Node.js, Express.js (REST APIs)
-* **Machine Learning Engine:** Python, Scikit-learn, XGBoost 
-* **Database & Cloud:** MongoDB Atlas Cloud
-* **Deployment:** Netlify (Web UI), Render.com (Backend API)
+| Layer | Architecture Component | Purpose |
+|-------|-----------------------|---------|
+| **Frontend** | Flutter / JS | Seamless cross-platform user experience (Web HTML5 & Android) |
+| **Backend** | Node.js & Express | Handling REST APIs, JWT Authentication, and processing routing |
+| **Database** | MongoDB Atlas Cloud | Scalable remote data storage for users, patients, and predictions |
+| **AI Engine** | Scikit-learn / XGBoost | Predictive modeling hosted securely with high precision thresholds |
 
 ---
 
-## 🚀 Key Features
-* 🏥 **Real-Time Risk Analysis:** Secure, rapid communication with the XGBoost AI model to predict CHD 10-year risk.
-* 📊 **Batch Processing:** Clinical data upload feature supporting CSV format for processing hundreds of patients at once.
-* 📱 **Cross-Platform:** Available as a standalone Android APK and a public Web Application.
-* 🔒 **Encrypted Architecture:** Secure JWT authentication and protected connection routing.
-* 📄 **PDF Reporting:** Automated generation of detailed patient medical review reports and dietary advisories.
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" width="25" /> Premium Features
+
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20With%20Key.png" width="20" /> **Zero-Trust Security:** Encrypted JWT user routing and fully shielded cloud-database architectures (CORS Bypass Integrated).
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="20" /> **Batch Data Processing:** Hospital administrators can upload dense CSV files to analyze hundreds of patients simultaneously.
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20Facing%20Up.png" width="20" /> **Dynamic PDF Reporting:** Intelligent one-click export for clinical patient reports and automated dietary advisories.
 
 ---
 
-## ⚙️ Local Development Setup
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Wrench.png" width="25" /> Local Installation Matrix
 
 <details>
-<summary><b>Click to expand local installation instructions</b></summary>
+<summary><b>🔥 Click to expand the developer deployment guide</b></summary>
 
-### 1. Prerequisites
-- Node.js (v16+)
-- Flutter SDK
-- MongoDB Compass (for local testing) or Atlas Cloud Cluster
+<br/>
 
-### 2. Backend Setup
+### 1. Database Configuration
+* Spin up a MongoDB Atlas cluster and whitelist your IP `0.0.0.0/0`.
+* Acquire your exact `mongodb+srv://` URI string and inject it into your `.env` layer.
+
+### 2. Backend Bootup
 ```bash
-# Clone the repository
 git clone https://github.com/sathishr-ai/heartsafe-backend.git
 cd heartsafe-backend
-
-# Install Dependencies
 npm install
+```
 
-# Create a .env file and add your variables
-MONGO_URI=mongodb+srv://<your_credentials>@cluster0.net/heartsafe
-JWT_SECRET=your_jwt_secret_key
+*Create the Environment Layer (`.env`):*
+```bash
+MONGO_URI=mongodb+srv://user123:<password>@cluster0...
 PORT=5000
+JWT_SECRET=super_secret
+```
 
-# Start the development server
+*Ignite Server:*
+```bash
 npm start
 ```
 
-### 3. Frontend Setup (Flutter)
+### 3. Frontend Execution (Flutter)
 ```bash
-# Build for Web
+cd chd_flutter_app
+
+# Render Web Build:
 flutter build web
 
-# Build for Android
+# Generate Android Release APK:
 flutter build apk --release
 ```
 
 </details>
 
-<br />
+<br/>
 
 <div align="center">
-  <sub>Built with ❤️ by a Full-Stack AI/ML Engineer</sub>
+  <h3>Built with passion by an Aspiring AI/ML Engineer and Full-Stack Developer</h3>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </div>
